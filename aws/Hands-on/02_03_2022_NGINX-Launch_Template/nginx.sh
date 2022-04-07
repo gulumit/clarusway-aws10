@@ -108,16 +108,16 @@ http://ec2-54-144-132-10.compute-1.amazonaws.com/index_2.html
 ## Part 3 - Automation of Web Server Installation through Bash Script (User data)
 
 15. Configure an Amazon EC2 instance with AMI as `Amazon Linux 2`, instance type as `t2.micro`, default VPC security group which allows connections from anywhere and any port.
-
-16. Configure instance to automate web server installation with `user data` script.
-
-
 #! /bin/bash
 
 yum update -y
 amazon-linux-extras install nginx1.12
 systemctl start nginx
-cd /usr/share/nginx/html
+cd /usr/share/n
+16. Configure instance to automate web server installation with `user data` script.
+
+
+ginx/html
 chmod -R 777 /usr/share/nginx/html
 rm index.html
 wget https://raw.githubusercontent.com/awsdevopsteam/ngniex/master/index.html

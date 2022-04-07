@@ -29,7 +29,7 @@ sudo fdisk /dev/xvdg
 # show new partitions
 lsblk
 # format the new partitions
-sudo mkfs -t ext4 /dev/xvdg1
+nn
 sudo mkfs -t ext4 /dev/xvdg2
 # create a mounting point path for new volume
 sudo mkdir /mnt/3rd-vol-part1
